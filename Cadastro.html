@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/site.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333; 
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+     
+    </style>
+    <style>
+        .center
+           {
+           text-align: center;
+           border: 3px solid green
+           }
+     </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nickolas Aparecido da Silva Pedroso</h1> <br />
+    </div>
+    <div class="topnav">
+        <a href="https://localhost:44358/Cadastro.html">Cadastro</a>
+        <a href="https://localhost:44358/Academico.html">Academico</a>
+        <a href="https://localhost:44358/Apresenta%C3%A7%C3%A3o.Html">Apresentação</a>
+    </div>
+    
+    <div style="background-color: blanchedalmond;" class="row"> 
+         
+
+    <div class="center">
+    <h1>Cadastro</h1>
+    <form name="cadastro" action="FromCadastro.aspx" method="post">
+        <label for="txtNome">Nome:</label> <br />
+        <input type="text" id="txtNome" name="txtNome" placeholder="Digite seu nome" required /> <br />
+
+        <label for="txtSobrenome">Sobrenome</label> <br />
+        <input type="text" id="txtSobrenome" name="txtSobrenome" placeholder="Digite seu sobrenome" required /> <br />
+
+        <label for="txtEmail">E-mail</label> <br />
+        <input type="email" id="txtEmail" name="txtEmail" placeholder="Digite seu e-mail" required /> <br />
+
+        <label for="txtData">Data de Nascimento</label><br />
+        <input type="date" id="txtData" name="txtData" placeholder="dd/ mm/ aaaa" required /><br />
+
+        <label for="txtEndereco">Endereço</label><br />
+        <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Informe seu endereço" required /><br />
+
+        <label for="txtCEP">CEP</label><br />
+        <input type="number" id="txtCEP" name="txtCEP" placeholder="Informe o CEP" required /><br />
+
+        <label for="txtBairro">Bairro</label><br />
+        <input type="text" id="txtBairro" name="txtBairro" placeholder="Informe o bairro onde reside" required /><br />
+
+        <label for="txtCidade">Cidade</label><br />
+        <input type="text" id="txtCidade" name="txtCidade" placeholder="Informe a sua cidade" required /><br />
+
+        <label for="txtComentario">Comentários</label><br />
+        <input type="text" id="txtComentario" name="txtComentario" placeholder="Deseja fazer um comentário?" required /><br />
+
+        <input type="submit" value="Enviar" />
+
+        <input type="reset" value="Cancelar" />
+    </form>
+    </div>
+    </div>
+</body>
+</html>
